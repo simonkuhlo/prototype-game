@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://nqgwdrxmnkji"]
+
+[ext_resource type="Texture2D" uid="uid://1vflgnjwxisy" path="res://img/Sprite-0002.png" id="1_ywc5i"]
+
+[node name="3 shot test gun" type="Node2D"]
+
+[node name="sprite" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_ywc5i")
+
+[node name="weapon_timer" type="Timer" parent="."]
+
+[node name="bullet_spawn" type="Marker2D" parent="."]
+position = Vector2(33, 0)
+
+[node name="magazine" type="Node" parent="."]
+
+[node name="chamber_1" type="Node" parent="magazine"]
+
+[node name="chamber_2" type="Node" parent="magazine"]
+
+[node name="chamber_3" type="Node" parent="magazine"]
